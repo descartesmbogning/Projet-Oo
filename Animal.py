@@ -6,7 +6,7 @@ class Animal(): # créer une classe Animal
     taille = 0 
     
     def __init__(self, poids, taille):
-        self.__poids = poids
+        self.set_poids(poids)
         self.__taille = taille
         
     def se_deplacer(self):    #Ajoutez une méthode se_deplacer( ) qui pour le moment ne fait rien.
@@ -28,9 +28,9 @@ class Animal(): # créer une classe Animal
 
 #instanciez cet objet. Faites un print de ses attributs.  
 chat = Animal(-3, 2) 
-chat.set_poids(3)
+#chat.set_poids(3)
 #print(chat.set_poids)
-print(f"La taille de l'animal est de : {chat.set_poids}")
+print(f"La taille de l'animal est de : {chat.get_poids()}")
 
 
 
