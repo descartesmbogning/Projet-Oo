@@ -11,7 +11,9 @@ class Oiseau(Animal):  # classe Oiseau qui hérite de la classe animal
         return 'Je vole'
 
     def set_altitude_max(self, altitude_max): #Encapsulation
-        self.__altitude_max = altitude_max
+        #self.__altitude_max = altitude_max
+        if altitude_max < 0:
+            return ValueError
     
     def get_altitute_max(self):
         return self.__altitude_max
@@ -20,7 +22,7 @@ class Oiseau(Animal):  # classe Oiseau qui hérite de la classe animal
 #Instanciez maintenant ces deux objets dans le
 #programme principal et appelez la méthode se_deplacer( ) pour chacun de ces
 #objets.
-rosignol = Oiseau(2, 1, 100)
+rosignol = Oiseau(2, 1, -100)
 print(f"Je suis madame la rosignol, l'{type(rosignol)}, {rosignol.se_deplacer()}")
 
 
