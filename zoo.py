@@ -1,4 +1,6 @@
 
+from numpy.ma.core import append
+
 from Animal import Animal
 
 
@@ -10,6 +12,16 @@ class Zoo:
                 raise TypeError()
             else:
                 self.liste_animaux_zoo.append(Animal)
+                return liste_animaux_zoo()
+
+
+
+# PROGRAMME PRINCIPAL
+
+liste_animaux_zoo = ["chat", "chien"]
+
+lapin = Animal(3, 0.5)
+liste_animaux_zoo.append(lapin)
 
 
 
