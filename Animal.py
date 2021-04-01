@@ -21,14 +21,18 @@ class Animal(): # créer une classe Animal
         else:
             self.__poids = poids
 
+    #Affectation des guetters et setters
+    #Encapsule les attributs pour mieux les controler
+    #Simplifie l'écriture dans le programme principal
     poids = property(get_poids, set_poids)
 
 
 
+#PROGRAMME PRINCIPAL
 
 #instanciez cet objet. Faites un print de ses attributs.  
 chat = Animal(-3, 2) 
-#chat.set_poids(3)
+chat.poids(3)
 #print(chat.set_poids)
 print(f"La taille de l'animal est de : {chat.get_poids()}")
 
