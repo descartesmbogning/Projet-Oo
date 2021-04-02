@@ -26,17 +26,18 @@ class Animal(): # créer une classe Animal
     #Simplifie l'écriture dans le programme principal
     poids = property(get_poids, set_poids)
 
-
+    def __str__(self):
+        return f"L animal pèse {self.poids}kg et et à une taille de {self.__taille}"
 
 #PROGRAMME PRINCIPAL
 
 #instanciez cet objet. Faites un print de ses attributs.  
-chat = Animal(-3, 2) 
-chat.poids(3)
+#chat = Animal(3, 2) 
+# chat.poids(3)
 #print(chat.set_poids)
-print(f"La taille de l'animal est de : {chat.get_poids()}")
+#print(f"La taille de l'animal est de : {chat.get_poids()}")
 
+#ani = Animal(10, 3)
 
-
-
+#print(str(ani))
 
