@@ -27,7 +27,7 @@ class Animal(): # créer une classe Animal
     poids = property(get_poids, set_poids)
 
     def __str__(self):
-        return f"L animal pèse {self.poids}kg et et à une taille de {self.__taille}"
+        return f"L animal pèse {self.poids}kg et et à une taille de {self.taille}"
 
 #PROGRAMME PRINCIPAL
 
