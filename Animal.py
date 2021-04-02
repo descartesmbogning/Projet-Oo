@@ -7,7 +7,7 @@ class Animal(): # créer une classe Animal
     
     def __init__(self, poids, taille):
         self.set_poids(poids)
-        self.__taille = taille
+        self.taille = taille
         
     def se_deplacer(self):    #Ajoutez une méthode se_deplacer( ) qui pour le moment ne fait rien.
         pass 
@@ -37,7 +37,21 @@ class Animal(): # créer une classe Animal
 #print(chat.set_poids)
 #print(f"La taille de l'animal est de : {chat.get_poids()}")
 
-#ani = Animal(10, 3)
+ani = Animal(10, 3)
 
 #print(str(ani))
+
+#instanciez cet objet. Faites un print de ses attributs.  
+python = Animal(80, 2) 
+print(f"Le poids de l'animal est de : {python.poids}")
+print(f"La taille de l'animal est de : {python.taille}")
+
+
+#Instanciez maintenant ces deux objets dans le programme principal 
+# et appelez la méthode se_deplacer( ) pour chacun de ces objets.
+#python = Serpent(10, 5)
+#rosignol = Oiseau(2, 1)
+#print(f"Je suis monsieur python, {type(python)}, {python.se_deplacer()}")
+#print(f"Je suis madame la rosignol, l'{type(rosignol)}, {rosignol.se_deplacer()}")
+
 

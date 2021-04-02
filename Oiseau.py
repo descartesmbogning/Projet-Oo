@@ -23,7 +23,7 @@ class Oiseau(Animal):  # classe Oiseau qui hérite de la classe animal
 #programme principal et appelez la méthode se_deplacer( ) pour chacun de ces
 #objets.
 rosignol = Oiseau(2, 1, -100)
-print(f"Je suis madame la rosignol, l'{type(rosignol)}, {rosignol.se_deplacer()}")
+print(f"Je suis madame la rosignol, oiseau, {rosignol.se_deplacer()}")
 
 
 

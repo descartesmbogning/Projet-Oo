@@ -42,7 +42,8 @@ zoo_domestique.add_animal(lapin)
     
 zoo_domestique = Zoo([chat, chien])
 zoo_sauvage = Zoo([tigre, lion])
-zoo=zoo_domestique.__add__(zoo_sauvage)
+#zoo=zoo_domestique.__add__(zoo_sauvage)
+zoo=zoo_domestique+zoo_sauvage
 print('\n'. join ([str(i) for i in zoo.liste_animaux_zoo]))
 #print(chat)
 #animals = ['cat', 'dog', 'rabbit']
